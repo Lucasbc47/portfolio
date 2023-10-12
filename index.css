@@ -1,0 +1,100 @@
+body {
+    background-color: rgba(201, 239, 244, 0.915);
+    font-family: monospace;
+    height: 100vh; /* Define a altura da tela inteira */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Estica para ocupar toda a altura verticalmente */
+    -webkit-box-shadow: -5px 2px 68px -28px rgba(0,0,0,0.98);
+    -moz-box-shadow: -5px 2px 68px -28px rgba(0,0,0,0.98);
+    box-shadow: -5px 2px 68px -28px rgba(0,0,0,0.98);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    align-items: stretch;
+}
+
+.sidenav {
+    width: 250px;
+    background-color: #111;
+    padding: 30px 0 80px 0;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sidenav h2, h3 {
+    color: white;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.sidenav h4 {
+    margin: 2rem 0;
+    color: white;
+}
+
+.sidenav p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    height: 200px;
+}
+
+.avatar {
+    width: 210px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px double rgb(187, 187, 187);
+}
+  
+
+.icon {
+    cursor: pointer;
+    width: 40px;
+    transition: 0.3s;
+    align-content: space-between;
+}
+
+.icon:hover, img:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-height: 100%; /* Ocupa a altura máxima do container */
+    overflow-y: auto;
+}
+
+main img {
+    cursor: pointer;
+    width: 90px;
+    transition: 0.3s;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav p {font-size: 18px;}
+}
+
